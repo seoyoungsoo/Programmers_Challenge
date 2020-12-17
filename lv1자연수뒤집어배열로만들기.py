@@ -4,7 +4,7 @@ def solution(n):
     answer = []
     a = n
 
-    while (a > 0):
+    while a > 0:
         b = a % 10
         a = a // 10
         answer.append(b)
