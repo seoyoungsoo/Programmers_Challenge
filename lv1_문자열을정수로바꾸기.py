@@ -12,5 +12,16 @@ def solution(s):
             return int('-' + s[1:])
 
 
+# 다른 풀이
+def strToInt(str):
+    a = int(str)
+    return a
+
+
+# testcase 1
 s = "-12345"
 print(solution(s))
+
+# 다른 풀이 testcase 2
+str = "-5678"
+print(strToInt(str))
