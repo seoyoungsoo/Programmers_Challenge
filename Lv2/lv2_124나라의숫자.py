@@ -18,8 +18,8 @@ def solution(n):
     return answer
 
 
-# 다른 풀이
-def otherSol(n):
+# 다른 풀이1
+def otherSol1(n):
     answer = ''
     while n > 0:
         n -= 1
@@ -29,7 +29,18 @@ def otherSol(n):
     return answer
 
 
+# 다른 풀이2
+# divmod 사용법을 숙지하자
+def otherSol2(n):
+    if n <= 3:
+        return '124'[n-1]
+    else:
+        q, r = divmod(n-1, 3)
+        return otherSol2(q) + '124'[r]
+
+
 # testcase1
 n = 57
 print(solution(n))
-print(otherSol(n))
+print(otherSol1(n))
+print(otherSol2(n))
