@@ -9,3 +9,7 @@ for i in n:
     res += int(i) * (base ** l)
     l -= 1
 print(res)
+
+# int 함수는 진법 변환을 지원함
+# ex)
+print(int(str(num), base))
